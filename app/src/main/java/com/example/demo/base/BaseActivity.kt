@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 
 abstract class BaseActivity :AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -14,7 +15,8 @@ abstract class BaseActivity :AppCompatActivity() {
 
         initDate()
 
-        startNet()
+
+
     }
 
     abstract fun getLayout(): Int
@@ -23,5 +25,4 @@ abstract class BaseActivity :AppCompatActivity() {
 
     abstract fun initDate()
 
-    abstract fun startNet()
 }

@@ -7,7 +7,7 @@ import java.lang.RuntimeException
 open class BasePresenter<T : IBaseView> : IPresenter<T> {
 
     var mView: T? = null
-
+    protected var mMap =HashMap<String,String>()
     private var compositeDisposable = CompositeDisposable()
 
     val isViewAttached: Boolean get() = mView != null

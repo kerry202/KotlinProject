@@ -13,4 +13,9 @@ interface ApiService {
 
     @GET(ApiConfig.Recommentds)
     fun get(@Query("phone")num:String):Observable<Info>
+
+
+    @FormUrlEncoded
+    @POST(ApiConfig.Recommentds)
+    fun sendSmd(@FieldMap fields: Map<String, String>):Observable<Info>
 }
