@@ -5,6 +5,7 @@ package com.example.demo.ui.main
 import android.view.View
 import com.example.demo.R
 import com.example.demo.base.BaseActivity
+import com.example.demo.ui.home.HomeFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() ,View.OnClickListener{
